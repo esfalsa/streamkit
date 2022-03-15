@@ -8,7 +8,7 @@
 		"preview": "svelte-kit preview",
 		"lint": "prettier --ignore-path .gitignore --check --plugin-search-dir=. . && eslint --ignore-path .gitignore .",
 		"format": "prettier --ignore-path .gitignore --write --plugin-search-dir=. .",
-		"postbuild": "rm -rf docs/* && cp -r build/. docs/"
+		"postbuild": "rm -rf docs/* && cp -r build/. docs/ && touch docs/.nojekyll"
 	},
 	"devDependencies": {
 		"@sveltejs/adapter-static": "^1.0.0-next.29",
