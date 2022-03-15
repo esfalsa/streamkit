@@ -82,7 +82,7 @@
 					type="checkbox"
 					name="organization"
 					id="organization"
-					bind:value={organization}
+					bind:checked={organization}
 					class="input"
 				/>
 				Organization
