@@ -1,3 +1,38 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.input {
+	@apply px-2.5 py-1 mt-0.5 text-gray-700 bg-white border border-gray-200 rounded-md  focus:border-blue-400 focus:outline-none focus:ring focus:ring-blue-600 focus:ring-opacity-20 transition duration-300 hover:shadow-sm focus:shadow-sm;
+}
+
+.input[type='text'],
+.input[type='number'],
+textarea.input {
+	@apply block;
+}
+
+.input[type='checkbox'] {
+	@apply appearance-none p-2;
+}
+
+.input[type='checkbox']:checked {
+	@apply bg-blue-500 text-white;
+	background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='white' stroke-width='3'%3E%3Cpath stroke-linecap='round' stroke-linejoin='round' d='M5 13l4 4L19 7' /%3E%3C/svg%3E");
+}
+
+.input[disabled] {
+	@apply bg-gray-100;
+}
+
+.text-green-stream {
+	color: #339933;
+}
+
+.text-gray-stream {
+	color: #7f8c8d;
+}
+
+.text-blue-stream {
+	color: #0000ff;
+}
